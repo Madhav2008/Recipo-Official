@@ -338,6 +338,7 @@ class _PostRecipeState extends State<PostRecipeScreen> {
                     horizontal: 20,
                   ),
                   child: SingleChildScrollView(
+                    physics: BouncingScrollPhysics(),
                     child: Column(
                       children: <Widget>[
                         TextField(
