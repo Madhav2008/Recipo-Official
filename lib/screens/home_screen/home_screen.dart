@@ -352,16 +352,13 @@ class _HomeScreenState extends State<HomeScreen>
                             const SizedBox(
                               width: 10,
                             ),
-                            AnimatedSkeleton(
-                              listenable: animationController!,
-                              child: Text(
-                                document['title'],
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  letterSpacing: 1,
-                                  color: Colors.black,
-                                ),
+                            Text(
+                              document['title'],
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                letterSpacing: 1,
+                                color: Colors.black,
                               ),
                             ),
                           ],
