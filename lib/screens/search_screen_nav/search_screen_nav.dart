@@ -32,12 +32,20 @@ class _SearchScreenNavState extends State<SearchScreenNav> {
             actions: [
               ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(willLeave = true),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.redAccent,
+                ),
                 child: const Text("Yes"),
               ),
               const SizedBox(height: 16),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(willLeave = false),
-                child: const Text("No"),
+                child: const Text(
+                  "No",
+                  style: TextStyle(
+                    color: Colors.redAccent,
+                  ),
+                ),
               ),
             ],
           ),
