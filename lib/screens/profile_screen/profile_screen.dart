@@ -65,15 +65,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 content: const Text('Do you really want to exit the app'),
                 actions: [
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pop(willLeave = true),
+                    onPressed: () => Navigator.of(context).pop(willLeave = true),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.redAccent,
+                    ),
                     child: const Text("Yes"),
                   ),
                   const SizedBox(height: 16),
                   TextButton(
-                    onPressed: () =>
-                        Navigator.of(context).pop(willLeave = false),
-                    child: const Text("No"),
+                    onPressed: () => Navigator.of(context).pop(willLeave = false),
+                    child: const Text(
+                      "No",
+                      style: TextStyle(
+                        color: Colors.redAccent,
+                      ),
+                    ),
                   ),
                 ],
               ),
