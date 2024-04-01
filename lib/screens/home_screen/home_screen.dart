@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.initState();
     animationController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 2),
     )..repeat();
   }
 
