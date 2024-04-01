@@ -343,14 +343,11 @@ class _HomeScreenState extends State<HomeScreen>
                       children: <Widget>[
                         Row(
                           children: [
-                            AnimatedSkeleton(
-                              listenable: animationController!,
-                              child: CircleAvatar(
-                                radius: 20,
-                                // backgroundColor: Colors.grey,
-                                backgroundImage:
-                                    NetworkImage(document['image']),
-                              ),
+                            CircleAvatar(
+                              radius: 20,
+                              // backgroundColor: Colors.grey,
+                              backgroundImage:
+                                  NetworkImage(document['image']),
                             ),
                             const SizedBox(
                               width: 10,
