@@ -23,6 +23,7 @@ class FirstTab extends StatelessWidget {
         }
         return GridView.count(
           crossAxisCount: 3,
+          physics: BouncingScrollPhysics(),
           children: snapshot.data!.docs.reversed
               .map(
                 (document) => Padding(
