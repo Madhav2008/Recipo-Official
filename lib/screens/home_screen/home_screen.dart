@@ -31,8 +31,8 @@ class _HomeScreenState extends State<HomeScreen>
       duration: const Duration(seconds: 1),
     )..repeat();
     do {
-      animationController?..forward().then((x) {
-        animationController?..reverse().then((x) {
+      animationController?.forward().then((x) {
+        animationController?.reverse().then((x) {
           repeats++;
         });
       });
