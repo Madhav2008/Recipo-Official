@@ -135,6 +135,7 @@ class _SearchScreenNavState extends State<SearchScreenNav> {
           return Padding(
             padding: const EdgeInsets.only(top: 20.0),
             child: ListView(
+              physics: BouncingScrollPhysics(),
               children: snapshot.data!.docs.map((document) {
                 return InkWell(
                   onTap: () {
