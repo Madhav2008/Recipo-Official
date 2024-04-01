@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen>
                 onPressed: () => Navigator.of(context).pop(willLeave = true),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.redAccent,
-                ),v
+                ),
                 child: const Text("Yes"),
               ),
               const SizedBox(height: 16),
