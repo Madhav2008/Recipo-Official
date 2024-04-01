@@ -312,7 +312,7 @@ class _HomeScreenState extends State<HomeScreen>
           return Padding(
             padding: const EdgeInsets.only(top: 70.0),
             child: ListView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
                 children: snapshot.data!.docs.map(
               (document) {
                 return InkWell(
