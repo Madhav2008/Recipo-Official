@@ -81,7 +81,7 @@ class CategoryScreen extends StatelessWidget {
           ),
           child: ListView.builder(
             itemCount: category.length,
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             itemBuilder: (BuildContext context, int index) {
               Category cate = category[index];
               return CategoryList(
