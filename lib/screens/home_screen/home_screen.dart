@@ -21,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen>
   final userId = FirebaseAuth.instance.currentUser!.uid;
   final TextEditingController searchController = TextEditingController();
   AnimationController? animationController;
+  int repeats = 0;
 
   @override
   void initState() {
@@ -28,7 +29,15 @@ class _HomeScreenState extends State<HomeScreen>
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
-    )..forward();
+    )..repeat();
+    do {
+      animationController?..forward().then((x) {
+        animationController?..reverse().then((x) {
+          repeats++;
+        });
+      });
+    } while (repeats < 2);
+
   }
 
   @override
