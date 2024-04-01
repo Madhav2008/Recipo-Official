@@ -98,17 +98,23 @@
 //                   title: Text('Are you sure?'),
 //                   content: Text('Do you really want to exit the app'),
 //                   actions: [
-//                     new ElevatedButton(
-//                       onPressed: () =>
-//                           Navigator.of(context).pop(willLeave = true),
-//                       child: Text("Yes"),
-//                     ),
-//                     SizedBox(height: 16),
-//                     new FlatButton(
-//                       onPressed: () =>
-//                           Navigator.of(context).pop(willLeave = false),
-//                       child: Text("No"),
-//                     ),
+//                    ElevatedButton(
+//                 onPressed: () => Navigator.of(context).pop(willLeave = true),
+//                 style: ElevatedButton.styleFrom(
+//                   backgroundColor: Colors.redAccent,
+//                 ),
+//                 child: const Text("Yes"),
+//               ),
+//               const SizedBox(height: 16),
+//               TextButton(
+//                 onPressed: () => Navigator.of(context).pop(willLeave = false),
+//                 child: const Text(
+//                   "No",
+//                   style: TextStyle(
+//                     color: Colors.redAccent,
+//                   ),
+//                 ),
+//               ),
 //                   ],
 //                 ));
 //         return willLeave;
