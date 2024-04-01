@@ -216,6 +216,7 @@ class _PostRecipeState extends State<PostRecipeScreen> {
                 child: Column(
                   children: [
                     ListView(
+                      physics: BouncingScrollPhysics(),
                       shrinkWrap: true,
                       children: <Widget>[
                         _imageFile != null
